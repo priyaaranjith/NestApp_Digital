@@ -36,7 +36,7 @@ export class AddsecurityComponent {
         if(response.status == "success"){
           console.log(response)
           alert ("security added")
-          this.route.navigate(["/securitylogin"])
+          this.route.navigate(["/viewsecurity"])
         }else{
           alert("security adding failed")
         }
