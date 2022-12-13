@@ -20,4 +20,8 @@ export class ApiService {
   {
     return this.http.get("http://localhost:8080/view")
   }
+  fetchesecurity=()=>
+  {
+    return this.http.get("http://localhost:8080/viewAll")
+  }
 }
