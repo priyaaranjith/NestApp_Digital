@@ -16,4 +16,8 @@ export class ApiService {
   {
     return this.http.post("http://localhost:8080/addSec",dataToSend)
   }
+  fetchemployee=()=>
+  {
+    return this.http.get("http://localhost:8080/view")
+  }
 }

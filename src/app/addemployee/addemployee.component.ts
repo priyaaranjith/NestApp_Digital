@@ -37,7 +37,7 @@ export class AddemployeeComponent {
         if(response.status == "success"){
           console.log(response)
           alert ("employee added")
-          this.route.navigate(["/employeelogin"])
+          this.route.navigate(["/viewemployee"])
         }else{
           alert("employee adding failed")
         }

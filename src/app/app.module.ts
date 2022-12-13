@@ -10,6 +10,9 @@ import { EmployeeloginComponent } from './employeelogin/employeelogin.component'
 import { AddemployeeComponent } from './addemployee/addemployee.component';
 import {HttpClientModule} from '@angular/common/http';
 import { AddsecurityComponent } from './addsecurity/addsecurity.component';
+import { AdminNavComponent } from './admin-nav/admin-nav.component';
+import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
+import { EmpnavComponent } from './empnav/empnav.component';
 
 const myRoute : Routes = [
   {
@@ -23,6 +26,10 @@ const myRoute : Routes = [
   {
     path : "addsecurity",
     component : AddsecurityComponent
+  },
+  {
+    path : "viewemployee",
+    component : ViewemployeeComponent
   }
 ]
 
@@ -32,7 +39,10 @@ const myRoute : Routes = [
     AdminloginComponent,
     EmployeeloginComponent,
     AddemployeeComponent,
-    AddsecurityComponent
+    AddsecurityComponent,
+    AdminNavComponent,
+    ViewemployeeComponent,
+    EmpnavComponent
   ],
   imports: [
     BrowserModule,
