@@ -22,7 +22,7 @@ export class AdminloginComponent {
       console.log(data)
 
       if (this.username=="admin" && this.password=="12345"){
-        this.route.navigate(['/addemployee'])
+        this.route.navigate(['/addsecurity'])
       }
       else{
         alert("invalid credentials")
