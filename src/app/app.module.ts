@@ -19,6 +19,7 @@ import { SecurityloginComponent } from './securitylogin/securitylogin.component'
 import { AddleaveComponent } from './addleave/addleave.component';
 import { SearchemployeeComponent } from './searchemployee/searchemployee.component';
 import { SearchsecurityComponent } from './searchsecurity/searchsecurity.component';
+import { CreatelogComponent } from './createlog/createlog.component';
 
 const myRoute : Routes = [
   {
@@ -75,7 +76,8 @@ const myRoute : Routes = [
     SecurityloginComponent,
     AddleaveComponent,
     SearchemployeeComponent,
-    SearchsecurityComponent
+    SearchsecurityComponent,
+    CreatelogComponent
   ],
   imports: [
     BrowserModule,
