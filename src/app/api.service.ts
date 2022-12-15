@@ -24,4 +24,25 @@ export class ApiService {
   {
     return this.http.get("http://localhost:8080/viewAll")
   }
+  Emplogin =(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/login",dataToSend)
+  }
+  Seclogin =(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/loginSec",dataToSend)
+  }
+  addleave=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/addleave",dataToSend)
+  }
+  searchemployee=(dataTo:any)=>
+  {
+    return this.http.post("http://localhost:8080/search",dataTo)
+  }
+  applyLeave = (data:any)=>
+  {
+    return this.http.post("http://localhost:8080/addleave",data) 
+  }
+
 }

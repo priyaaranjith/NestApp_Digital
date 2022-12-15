@@ -15,6 +15,10 @@ import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
 import { EmpnavComponent } from './empnav/empnav.component';
 import { SecnavComponent } from './secnav/secnav.component';
 import { ViewsecurityComponent } from './viewsecurity/viewsecurity.component';
+import { SecurityloginComponent } from './securitylogin/securitylogin.component';
+import { AddleaveComponent } from './addleave/addleave.component';
+import { SearchemployeeComponent } from './searchemployee/searchemployee.component';
+import { SearchsecurityComponent } from './searchsecurity/searchsecurity.component';
 
 const myRoute : Routes = [
   {
@@ -36,6 +40,23 @@ const myRoute : Routes = [
   {
     path : "viewsecurity",
     component : ViewsecurityComponent
+  },
+  {
+    path :"employeelogin",
+    component :EmployeeloginComponent
+  },
+  {
+    path : "securitylogin",
+    component :SecurityloginComponent
+  },
+  {
+    path : "addleave",
+    component : AddleaveComponent
+  },
+  {
+    path : "searchemployee",
+    component :SearchemployeeComponent
+
   }
 ]
 
@@ -50,7 +71,11 @@ const myRoute : Routes = [
     ViewemployeeComponent,
     EmpnavComponent,
     SecnavComponent,
-    ViewsecurityComponent
+    ViewsecurityComponent,
+    SecurityloginComponent,
+    AddleaveComponent,
+    SearchemployeeComponent,
+    SearchsecurityComponent
   ],
   imports: [
     BrowserModule,

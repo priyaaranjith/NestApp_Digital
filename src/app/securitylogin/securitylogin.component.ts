@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { Route, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { ApiService } from '../api.service';
 
 @Component({
-  selector: 'app-employeelogin',
-  templateUrl: './employeelogin.component.html',
-  styleUrls: ['./employeelogin.component.css']
+  selector: 'app-securitylogin',
+  templateUrl: './securitylogin.component.html',
+  styleUrls: ['./securitylogin.component.css']
 })
-export class EmployeeloginComponent {
+export class SecurityloginComponent {
 
   username =""
   password = ""
@@ -20,7 +20,7 @@ export class EmployeeloginComponent {
       "username":this.username,
       "password":this.password
     }
-    this.api.Emplogin(data).subscribe(
+    this.api.Seclogin(data).subscribe(
       (response:any)=>{
         if(response.status == "success"){
           let userId = response.userId
@@ -35,8 +35,5 @@ export class EmployeeloginComponent {
     )
   }
       
+
 }
-
-
-
-
