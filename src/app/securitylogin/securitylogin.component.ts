@@ -13,27 +13,21 @@ export class SecurityloginComponent {
   password = ""
 
   constructor(private api: ApiService, private route: Router) { }
-  
-  readValues =() =>
-  {
+  readValues = ()=>{
     let data:any = {
-      "username":this.username,
-      "password":this.password
+        "username":this.username,
+        "password":this.password
     }
     this.api.Seclogin(data).subscribe(
-      (response:any)=>{
-        if(response.status == "success"){
-          let userId = response.userId
-          console.log(userId)
-          localStorage.setItem("userInfo",userId)
-          alert ("login success")
-          this.route.navigate(["/view"])
-        }else{
-          alert("login failed")
+        (response:any)=>{
+            if(response.status=="success"){
+                localStorage.setItem("userInfo",response.userInfo)
+                this.route.navigate(["/securityProfile"])
+            }else{
+                alert("failed")
+            }
         }
-      }
     )
-  }
-      
 
+}
 }

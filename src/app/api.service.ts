@@ -44,5 +44,59 @@ export class ApiService {
   {
     return this.http.post("http://localhost:8080/addleave",data) 
   }
+  employeeProfile = (data:any)=>{
+    return this.http.post("http://localhost:8080/viewprofile",data)
+  }
+  viewEmployLog=(data : any)=>
+  {
+    return this.http.post("http://localhost:8080/viewlogbyid",data)
+  }
+  viewEmpLogs=(data:any)=>
+  {
+    return this.http.post("http://localhost:8080/viewalllogs",data)
+  }
+  viewDailyVisitorLog=(data:any)=>
+  {
+    return this.http.post("http://localhost:8080/viewdailyvisitorelog",data)
+  }
+  viewDailyEmpLog=(data:any)=>
+  {
+    return this.http.post("http://localhost:8080/viewdailyemployeelog",data)
+  }
+  viewEmployLogg=()=>
+  {
+    return this.http.get("http://localhost:8080/viewallemployeelog")
+  }
+  viewVisitorLog=()=>
+  {
+    return this.http.get("http://localhost:8080/viewallvisitorlog")
+  }
+  addvisitor=(data:any)=>
+  {
+    return this.http.post("http://localhost:8080/addvisitor",data)
+  }
+  searchsecurity=(dataTo:any)=>
+  {
+    return this.http.post("http://localhost:8080/searchSec",dataTo)
+  }
+  deleteemployee=(dataTo:any)=>
+  {
+    return this.http.post("http://localhost:8080/delete",dataTo)
+  }
+  deletesecurity=(dataTo:any)=>
+  {
+    return this.http.post("http://localhost:8080/deleteSec",dataTo)
+  }
+  securityProfile = (data:any)=>{
+    return this.http.post("http://localhost:8080/viewprofiles",data)
+  }
+  viewallleaves=()=>
+  {
+    return this.http.get("http://localhost:8080/viewallleaves")
+  }
+  updatestatus = (data:any)=>{
+    return this.http.post("http://localhost:8080/updatestatus",data)
+  }
+
 
 }

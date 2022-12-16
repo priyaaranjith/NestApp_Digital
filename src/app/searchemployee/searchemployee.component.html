@@ -1,3 +1,4 @@
+<app-admin-nav></app-admin-nav>
 <div class="container">
 
     <div class="row">
@@ -53,6 +54,10 @@
                     <input type="text" class="form-control" value="{{j.salary}}">
 
                 </div>
+                
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-danger" (click)="deleteBtnClick(j.id)">Delete</button>
+                </div>
 
             </div>
 
@@ -60,7 +65,4 @@
 
     </div>
 
-</div>
-
-
-
+</div>    

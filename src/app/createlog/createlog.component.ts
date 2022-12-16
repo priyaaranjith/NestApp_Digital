@@ -8,6 +8,5 @@ import { ApiService } from '../api.service';
   styleUrls: ['./createlog.component.css']
 })
 export class CreatelogComponent {
-
-
 }
+

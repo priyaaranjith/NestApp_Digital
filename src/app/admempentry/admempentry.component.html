@@ -1,0 +1,77 @@
+<style>
+    .bgm {background-image: url('https://assets-global.website-files.com/61766c42e8e50c99a04fbd4b/6179a7473854b15e11196ea6_shutterstock_1389455627.jpeg');}
+</style>
+<div class="bgm" style="height: 650px;">
+<div class="container">
+    <div class="row g-3 m-4">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 m-4">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <label for="" class="form-label"><h4>Date</h4></label>
+                    <input type="date" name="date" [(ngModel)]="date" class="form-control">
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    
+                    <button (click)="readValue()" class="btn btn-success">Search</button>
+                </div>
+            </div>
+
+
+    <div class="row g-3 m-4">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+          <table class="table table-bordered border-dark table-dark table-striped " *ngFor="let i of data">
+            <thead>
+              <tr>
+                <th scope="col">Employee Code</th>
+                <th scope="col">Date</th>
+                <th scope="col">Entry Date_Time</th>
+                <th scope="col">Exit Date_Time</th>
+               
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{i.empid}}</td>
+                <td>{{i.date}}</td>
+                <td>{{i.entry_datetime}}</td>
+                <td>{{i.exit_datetime}}</td>
+               
+              </tr>
+            </tbody>
+          </table>
+            
+
+        </div>
+    </div>
+</div>
+           <div class="row g-3 m-4">
+           <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+<table class="table table-bordered border-dark table-dark table-striped" *ngFor="let i of searchData">
+    <thead>
+      <tr>
+        <th scope="col">EmpCode</th>
+        <th scope="col">Date</th>
+        <th scope="col">Entry time</th>
+        <th scope="col">Exit time</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{i.empid}}</td>
+        <td>{{i.date}}</td>
+        <td>{{i.entry_datetime}}</td>
+        <td>{{i.exit_datetime}}</td>
+       
+      </tr>
+    </tbody>
+  </table>
+           </div>
+           </div>
+    </div>
+</div>
+</div>

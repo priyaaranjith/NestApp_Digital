@@ -20,6 +20,14 @@ import { AddleaveComponent } from './addleave/addleave.component';
 import { SearchemployeeComponent } from './searchemployee/searchemployee.component';
 import { SearchsecurityComponent } from './searchsecurity/searchsecurity.component';
 import { CreatelogComponent } from './createlog/createlog.component';
+import { EmpprofileComponent } from './empprofile/empprofile.component';
+import { AdmempentryComponent } from './admempentry/admempentry.component';
+import { AdmvisitorComponent } from './admvisitor/admvisitor.component';
+import { AllempentryComponent } from './allempentry/allempentry.component';
+import { AllvisitorentryComponent } from './allvisitorentry/allvisitorentry.component';
+import { VisitoraddentryComponent } from './visitoraddentry/visitoraddentry.component';
+import { SecurityprofileComponent } from './securityprofile/securityprofile.component';
+import { ViewleavesComponent } from './viewleaves/viewleaves.component';
 
 const myRoute : Routes = [
   {
@@ -57,8 +65,37 @@ const myRoute : Routes = [
   {
     path : "searchemployee",
     component :SearchemployeeComponent
-
+  },
+  {
+    path:"employeeProfile",
+    component: EmpprofileComponent
+  },
+  {
+    path :"admempentry",
+    component :AdmempentryComponent
+  },
+  {
+    path : "admvisitor",
+    component : AdmvisitorComponent
+  },
+  {
+    path : "allempentry",
+    component :AllempentryComponent
+  },
+  {
+    path :"searchsecurity",
+    component:SearchsecurityComponent
+  },
+  {
+    path :"securityProfile",
+    component:SecurityprofileComponent
+  },
+  {
+    path : "viewleaves",
+    component :ViewleavesComponent
   }
+
+  
 ]
 
 @NgModule({
@@ -77,7 +114,15 @@ const myRoute : Routes = [
     AddleaveComponent,
     SearchemployeeComponent,
     SearchsecurityComponent,
-    CreatelogComponent
+    CreatelogComponent,
+    EmpprofileComponent,
+    AdmempentryComponent,
+    AdmvisitorComponent,
+    AllempentryComponent,
+    AllvisitorentryComponent,
+    VisitoraddentryComponent,
+    SecurityprofileComponent,
+    ViewleavesComponent
   ],
   imports: [
     BrowserModule,
