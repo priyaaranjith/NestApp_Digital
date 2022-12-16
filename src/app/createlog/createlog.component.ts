@@ -8,5 +8,26 @@ import { ApiService } from '../api.service';
   styleUrls: ['./createlog.component.css']
 })
 export class CreatelogComponent {
+
+  constructor(private api:ApiService,private route:Router){}
+  empid =""
+
+  addEntry = ()=>{
+    let data:any = {
+      "empid":this.empid
+    }
+    this.api.viewcheckin().subscribe(
+      (response:any)=>{
+        if(response.status == "success"){
+          alert("success")
+          window.location.reload()
+        }else{
+          alert("Employee is in Leave")
+        }
+      }
+    )
+  }
+
+
 }
 

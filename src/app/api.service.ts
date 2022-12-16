@@ -97,6 +97,13 @@ export class ApiService {
   updatestatus = (data:any)=>{
     return this.http.post("http://localhost:8080/updatestatus",data)
   }
+  viewcheckin=()=>
+  {
+    return this.http.get("http://localhost:8080/viewcheckin")
+  }
+  viewalllogs = (data:any)=>{
+    return this.http.post("http://localhost:8080/viewalllogs",data)
+  }
 
 
 }

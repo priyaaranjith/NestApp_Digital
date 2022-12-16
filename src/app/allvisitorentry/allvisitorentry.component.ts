@@ -22,7 +22,7 @@ export class AllvisitorentryComponent {
   {
     let data:any={"date":this.date}
     console.log(data)
-    this.api.viewDailyVisitorLog(data).subscribe(
+    this.api.viewalllogs(data).subscribe(
       (response:any)=>
       {
         console.log(response)

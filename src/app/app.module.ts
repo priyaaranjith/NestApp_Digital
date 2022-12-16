@@ -28,10 +28,17 @@ import { AllvisitorentryComponent } from './allvisitorentry/allvisitorentry.comp
 import { VisitoraddentryComponent } from './visitoraddentry/visitoraddentry.component';
 import { SecurityprofileComponent } from './securityprofile/securityprofile.component';
 import { ViewleavesComponent } from './viewleaves/viewleaves.component';
+import { HomeComponent } from './home/home.component';
+import { HomenavComponent } from './homenav/homenav.component';
 
 const myRoute : Routes = [
   {
-    path : "",
+    path:"",
+    component:HomeComponent
+
+  },
+  {
+    path : "adminlogin",
     component : AdminloginComponent
   },
   {
@@ -93,6 +100,14 @@ const myRoute : Routes = [
   {
     path : "viewleaves",
     component :ViewleavesComponent
+  },
+  {
+    path :"viewcheckin",
+    component :CreatelogComponent
+  },
+  {
+    path:"viewalllogs",
+    component:AllvisitorentryComponent
   }
 
   
@@ -122,7 +137,9 @@ const myRoute : Routes = [
     AllvisitorentryComponent,
     VisitoraddentryComponent,
     SecurityprofileComponent,
-    ViewleavesComponent
+    ViewleavesComponent,
+    HomeComponent,
+    HomenavComponent
   ],
   imports: [
     BrowserModule,
